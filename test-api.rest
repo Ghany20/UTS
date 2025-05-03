@@ -1,0 +1,92 @@
+# Testing CRUD Pembelian API
+
+### GET All Pembelian
+GET http://localhost:3000/pembelian HTTP/1.1
+Content-Type: application/json
+
+###
+
+### GET Pembelian by ID
+GET http://localhost:3000/pembelian/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
+### POST Create Pembelian
+POST http://localhost:3000/pembelian HTTP/1.1
+Content-Type: application/json
+
+{
+  "produkId": 1,
+  "supplierId": 1,
+  "jumlah": 10,
+  "hargaBeli": 50000,
+  "tanggal": "2025-05-03"
+}
+
+###
+
+### PUT Update Pembelian
+PUT http://localhost:3000/pembelian/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "produkId": 1,
+  "supplierId": 1,
+  "jumlah": 15,
+  "hargaBeli": 60000,
+  "tanggal": "2025-05-04"
+}
+
+###
+
+### DELETE Pembelian
+DELETE http://localhost:3000/pembelian/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Testing CRUD Penjualan API
+
+### GET All Penjualan
+GET http://localhost:3000/penjualan HTTP/1.1
+Content-Type: application/json
+
+###
+
+### GET Penjualan by ID
+GET http://localhost:3000/penjualan/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
+### POST Create Penjualan
+POST http://localhost:3000/penjualan HTTP/1.1
+Content-Type: application/json
+
+{
+  "produkId": 1,
+  "jumlah": 5,
+  "tanggal": "2025-05-03"
+}
+
+###
+
+### PUT Update Penjualan
+PUT http://localhost:3000/penjualan/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "produkId": 1,
+  "jumlah": 8,
+  "tanggal": "2025-05-04"
+}
+
+###
+
+### DELETE Penjualan
+DELETE http://localhost:3000/penjualan/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
